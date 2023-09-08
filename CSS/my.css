@@ -1,0 +1,288 @@
+:root {
+  --text-color: #f6f6f6;
+  --main-color: #ea1538;
+  --secondary-color: #6b1e2b;
+  --header-color: #000000;
+  --background-color: #000000;
+  --main-duration: 0.4s;
+}
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+body {
+  /* background-color: var(--background-color); */
+  background-image: url(../images/bg1_home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s ease;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: var(--header-color);
+}
+
+.header .navbar {
+  /* background-color: var(--header-color); */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: 999;
+  /* box-shadow: 0px 0px 10px 0px var(--secondary-color); */
+  /* border-bottom:  solid 1.5px var(--main-color); */
+}
+.header .logo {
+  font-size: 22px;
+  color: var(--text-color);
+}
+.header .logo span .logo-Protofilo {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.header .logo span:hover {
+  text-shadow: 0 0 20px var(--text-color);
+}
+
+.header ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+.header ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  transition: 0.7s;
+}
+.header ul li .active {
+  color: var(--main-color);
+}
+.header ul li a:hover {
+  color: var(--main-color);
+  padding: 0 10px 0;
+  text-shadow: 0 0 15px var(--text-color);
+  /* text-transform: uppercase; */
+}
+
+.header .navbar .portofilo-btn {
+  display: inline-block;
+  text-decoration: none;
+  border: var(--main-color) solid 2px;
+  background: var(--main-color);
+  padding: 8px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 15px;
+  transition: 0.6s;
+}
+.header .navbar .portofilo-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 7px var(--secondary-color);
+}
+
+/* Start Home Section */
+.main {
+  width: 80%;
+  min-height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: 998;
+  padding-top: 120px;
+}
+
+.main .main-content .main-text {
+  font-size: 70px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.main .main-content .main-text span {
+  color: var(--main-color);
+  text-shadow: -6px 0px 0 var(--text-color);
+}
+.main .main-content .sec-text {
+  color: var(--main-color);
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+.main .main-content .view-work-btn {
+  display: inline-block;
+  text-decoration: none;
+  border: var(--main-color) solid 2px;
+  background: var(--main-color);
+  padding: 11px 22px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 15px;
+  transition: 0.4s;
+}
+.main .main-content .view-work-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: var(--main-color);
+  background: transparent;
+  box-shadow: 0 0 10px 3px var(--secondary-color);
+}
+
+.main .main-content .cv-btn {
+  display: inline-block;
+  margin-left: 30px;
+  text-decoration: none;
+  border: var(--main-color) solid 2px;
+  padding: 11px 22px;
+  border-radius: 20px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.main .main-content .cv-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: var(--text-color);
+  background: var(--main-color);
+  /* padding: 11px 27px; */
+  box-shadow: 0 0 10px 4px var(--secondary-color);
+}
+
+.main .social-icons {
+  padding: 15px 20px;
+}
+.main .social-icons a {
+  margin-right: 20px;
+}
+.main .social-icons a i {
+  font-size: 20px;
+  transition: all 0.6s ease;
+}
+.main .social-icons a i:hover {
+  color: var(--main-color);
+  transform: translateY(-5);
+  cursor: pointer;
+}
+/* End Home Section */
+/* Start Services Section */
+/* Start Special title */
+.services {
+  width: 80%;
+  min-height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 80px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.title span {
+  color: #ea1538;
+  text-shadow: -4px 0px 0 var(--text-color);
+}
+/* End Special title */
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  width: 260px;
+  padding: 10px;
+  margin: 20px;
+  transition: 0.6s ease;
+  border: var(--background-color) solid 2px;
+  border-radius: 15px;
+  box-shadow: 0 0 1rem 0.3rem var(--secondary-color);
+}
+.card:hover {
+  transform: scale(1.04);
+  border-radius: 15px;
+  color: var(--text-color);
+  border: var(--main-color) solid 2px;
+}
+.container .card .icon i {
+  font-size: 50px;
+  color: hsl(0deg 15.7% 84.74%);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.container .card .info h3 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.container .card .info p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+/* End Services Section */
+/* Start  Projects Section */
+.projects {
+  width: 80%;
+  min-height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 80px;
+}
+.projects .container img {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.projects .container .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects .container .link a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  margin-top: 10px;
+  transition: 0.5s ease;
+}
+.projects .container .link a:hover {
+  transform: scale(1.04);
+  color: var(--text-color);
+}
+.projects .container .link i {
+  font-size: 15px;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+/* End  Projects Section */
