@@ -254,17 +254,42 @@ body {
   margin-right: 10%;
   padding-top: 80px;
 }
-.projects .container img {
-  width: 100%;
-  /* border-radius: 15px; */
+.projects .container .card {
   overflow: hidden;
 }
+.projects .container .card img {
+  width: 100%;
+  height: 110px;
+  border-radius: 10px;
+}
 .projects .card .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
   width: 100%;
-  padding: 10px;
+  height: 100%;
+  padding: 8px;
+  left: 0;
+  bottom: 0px;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), var(--background-color));
+  border-radius: 15px;
+  transform: translateY(100%);
+  transition: var(--main-duration);
+  
+
+
 }
+.projects .card:hover .info{
+  transform: translateY(0);
+} 
 .projects .card .info h3 {
+  font-size: 20px;
+}
+.projects .container .info p {
+  padding-right: 10px;
+  margin-top: -8px;
   font-size: 15px;
 }
 .projects .container .link {
@@ -273,26 +298,25 @@ body {
   align-items: center;
 }
 .projects .container .link a {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background-color: var(--text-color);
-  margin-top: 10px;
+  margin-top: 5px;
   transition: var(--main-duration) ease;
 }
 .projects .container .link a:hover {
   transform: scale(1.08);
-  color: var(--text-color);
-  box-shadow: 0 0 10px 4px var(--secondary-color);
 }
+
 .projects .container .link i {
-  font-size: 15px;
+  font-size: 12px;
   color: var(--main-color);
   display: flex;
   justify-content: center;
-  margin: 15px;
+  margin: 10px;
 }
 /* End  Projects Section */
