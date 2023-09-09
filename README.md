@@ -1,9 +1,11 @@
 
 # My Portofolio
 
-- ~~Header Section [Navigation bar] ~~
+- ~~Header Section [Navigation bar]~~
 - ~~Main section~~ 
 - ~~Services section~~
 - ~~Projects section~~
 - ~~Contact Me Section~~
-- ~~Footer Section ~~
+- ~~Footer Section~~
+- Responsive Design 
+   
