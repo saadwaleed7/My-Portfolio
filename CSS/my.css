@@ -162,17 +162,17 @@ body {
   box-shadow: 0 0 10px 4px var(--secondary-color);
 }
 
-.main .social-icons {
+.social-icons {
   padding: 15px 20px;
 }
-.main .social-icons a {
+.social-icons a {
   margin-right: 20px;
 }
-.main .social-icons a i {
+.social-icons a i {
   font-size: 20px;
   transition: all var(--main-duration) ease;
 }
-.main .social-icons a i:hover {
+.social-icons a i:hover {
   color: var(--main-color);
   transform: translateY(-5);
   cursor: pointer;
@@ -373,5 +373,44 @@ body {
   cursor: pointer;
   box-shadow: 0 0 10px 5px var(--secondary-color);
 }
-
 /* End Contact Me Section  */
+/* Start Footer Section */
+.footer {
+  background-color: var(--section-color);
+  height: 55px;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-text p {
+  font-size: 15px;
+}
+.footer .footer-text p span {
+  color: var(--main-color);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.footer .footer-icon a i {
+  color: var(--section-color);
+}
+
+.footer .footer-icon a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  margin-top: 5px;
+  transition: var(--main-duration) ease;
+  text-decoration: none;
+}
+.footer .footer-icon a:hover {
+  transform: scale(1.08);
+  background-color: var(--main-color);
+}
+/* End Footer Section */
