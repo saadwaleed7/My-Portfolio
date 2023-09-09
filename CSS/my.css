@@ -403,7 +403,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 30%;
   background-color: var(--text-color);
   margin-top: 5px;
   transition: var(--main-duration) ease;
